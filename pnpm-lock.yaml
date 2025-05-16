@@ -14,6 +14,9 @@ importers:
       glsl-ts:
         specifier: ^0.1.0
         version: 0.1.0
+      shdr:
+        specifier: ^0.2.0
+        version: 0.2.0
 
 packages:
 
@@ -1143,6 +1146,9 @@ packages:
   sharp@0.33.5:
     resolution: {integrity: sha512-haPVm1EkS9pgvHrQ/F3Xy+hgcuMV0Wm9vfIBSiwZ05k+xgb0PkBQpGsAA/oWdDobNaZTH5ppvHtzCFbnSEwHVw==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+
+  shdr@0.2.0:
+    resolution: {integrity: sha512-qKoPWiJykWy5Fia+gk97nFmHlP4uwBLpqmUJZmBvB704aL0SdfMHorLnCdq+ho3ueQsnVcb1e0maCKJJuMr1Yw==}
 
   shiki@3.2.2:
     resolution: {integrity: sha512-0qWBkM2t/0NXPRcVgtLhtHv6Ak3Q5yI4K/ggMqcgLRKm4+pCs3namgZlhlat/7u2CuqNtlShNs9lENOG6n7UaQ==}
@@ -2848,6 +2854,8 @@ snapshots:
       '@img/sharp-win32-ia32': 0.33.5
       '@img/sharp-win32-x64': 0.33.5
     optional: true
+
+  shdr@0.2.0: {}
 
   shiki@3.2.2:
     dependencies:

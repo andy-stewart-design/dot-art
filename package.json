@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "astro": "^5.7.0",
-    "glsl-ts": "^0.1.0"
+    "glsl-ts": "^0.1.0",
+    "shdr": "^0.2.0"
   }
 }
