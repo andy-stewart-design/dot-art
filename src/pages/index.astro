@@ -161,11 +161,14 @@ import HomeCanvas from "@/components/HomeCanvas";
       line-height: 1;
       font-size: 4.5rem;
       font-weight: 900;
-      margin: 0;
-      margin-block-end: 0.5rem;
+      margin-block: 1rem 0;
 
       @media (width > 480px) {
         font-size: 6rem;
+      }
+
+      @media (width > 640px) {
+        margin-block: 0 0.5rem;
       }
 
       span.no-wrap {

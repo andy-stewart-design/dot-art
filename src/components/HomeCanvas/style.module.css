@@ -1,6 +1,17 @@
 .container {
   height: 100svh;
   touch-action: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 320px;
+    background: radial-gradient(ellipse at bottom, black, transparent 50%);
+    opacity: 0.75;
+  }
 }
 
 .play {
@@ -12,6 +23,8 @@
   border: none;
   border-radius: 100vmax;
   cursor: pointer;
+  color: white;
+  z-index: 2;
 
   @media (width > 640px) {
     bottom: 3rem;
