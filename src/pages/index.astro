@@ -97,6 +97,7 @@ import HomeCanvas from "@/components/HomeCanvas";
 
       .logomark {
         color: oklch(0.7 0.24 25.4);
+        /* color: oklch(0.71 0.23 25.5); */
       }
 
       h2 {
@@ -140,6 +141,7 @@ import HomeCanvas from "@/components/HomeCanvas";
   }
 
   .content {
+    position: relative;
     padding: 2rem;
     padding-bottom: 4.5rem;
     display: flex;
@@ -167,7 +169,9 @@ import HomeCanvas from "@/components/HomeCanvas";
       }
 
       span.no-wrap {
-        white-space: nowrap;
+        display: inline-flex;
+        align-items: baseline;
+        flex-wrap: nowrap;
       }
 
       svg {
