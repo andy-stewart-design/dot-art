@@ -1,5 +1,11 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+import AndyLogo from "@/components/svg/andy-logo.svg";
+import Linkedin from "@/components/svg/linkedin.svg";
+import Bluesky from "@/components/svg/bluesky.svg";
+import Codepen from "@/components/svg/codepen.svg";
+import Github from "@/components/svg/github.svg";
+import PlusExpressive from "@/components/svg/plus-expressive.svg";
 ---
 
 <script>
@@ -18,46 +24,8 @@ import Layout from "@/layouts/Layout.astro";
     <div id="wrapper"></div>
     <div class="content">
       <header>
-        <span style="display: flex; gap: 0.75rem; align-items: center;">
-          <svg
-            width="36"
-            height="36"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="12" cy="5.5" r="3.5" fill="oklch(0.7 0.24 25.4)"
-            ></circle>
-            <circle cx="19.5" cy="18.5" r="3.5" fill="oklch(0.7 0.24 25.4)"
-            ></circle>
-            <circle
-              cx="4.5"
-              cy="18.5"
-              r="3.5"
-              transform="rotate(90 4.5 18.5)"
-              fill="oklch(0.7 0.24 25.4)"></circle>
-            <ellipse
-              cx="7.5"
-              cy="11.5"
-              rx="2.5"
-              ry="2.5"
-              transform="rotate(-180 7.5 11.5)"
-              fill="oklch(0.7 0.24 25.4)"></ellipse>
-            <ellipse
-              cx="12"
-              cy="16.5"
-              rx="2.5"
-              ry="2.5"
-              transform="rotate(-180 12 16.5)"
-              fill="oklch(0.7 0.24 25.4)"></ellipse>
-            <ellipse
-              cx="16.5"
-              cy="11.5"
-              rx="2.5"
-              ry="2.5"
-              transform="rotate(-90 16.5 11.5)"
-              fill="oklch(0.7 0.24 25.4)"></ellipse>
-          </svg>
+        <span class="logo">
+          <AndyLogo class="logomark" width="36" height="36" />
           <h2>Andy Stewart</h2>
         </span>
         <div class="links">
@@ -66,140 +34,44 @@ import Layout from "@/layouts/Layout.astro";
             target="_blank"
             aria-label="Github"
           >
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M16.0002 1.3335C7.89683 1.3335 1.3335 7.89683 1.3335 16.0002C1.3335 22.4902 5.53183 27.9718 11.3618 29.9151C12.0952 30.0435 12.3702 29.6035 12.3702 29.2184C12.3702 28.8702 12.3518 27.7151 12.3518 26.4868C8.66683 27.1651 7.7135 25.5884 7.42016 24.7635C7.25516 24.3418 6.54016 23.0402 5.91683 22.6918C5.4035 22.4168 4.67016 21.7384 5.8985 21.7202C7.0535 21.7018 7.8785 22.7835 8.1535 23.2235C9.4735 25.4418 11.5818 24.8184 12.4252 24.4335C12.5535 23.4802 12.9385 22.8384 13.3602 22.4718C10.0968 22.1051 6.68683 20.8402 6.68683 15.2302C6.68683 13.6351 7.25516 12.3152 8.19016 11.2885C8.0435 10.9218 7.53016 9.4185 8.33683 7.40183C8.33683 7.40183 9.56516 7.01683 12.3702 8.90516C13.5435 8.57516 14.7902 8.41016 16.0368 8.41016C17.2835 8.41016 18.5302 8.57516 19.7035 8.90516C22.5086 6.9985 23.7368 7.40183 23.7368 7.40183C24.5435 9.4185 24.0302 10.9218 23.8835 11.2885C24.8186 12.3152 25.3868 13.6168 25.3868 15.2302C25.3868 20.8584 21.9586 22.1051 18.6952 22.4718C19.2268 22.9302 19.6852 23.8102 19.6852 25.1851C19.6852 27.1468 19.6668 28.7235 19.6668 29.2184C19.6668 29.6035 19.9419 30.0618 20.6752 29.9151C26.4686 27.9718 30.6668 22.4718 30.6668 16.0002C30.6668 7.89683 24.1035 1.3335 16.0002 1.3335Z"
-                fill="#FF4848"></path>
-            </svg>
+            <Github width="20" height="20" />
           </a>
           <a
             href="https://codepen.io/andystewartdesign"
             target="_blank"
             aria-label="Codepen"
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M3.7998 15.3573L11 20.1357V15.8954L7 13.205L3.7998 15.3573ZM13 15.8954V20.1357L20.1992 15.3573L17 13.205L13 15.8954ZM8.79102 11.9999L12 14.1581L15.208 11.9999L12 9.84073L8.79102 11.9999ZM3 13.4853L5.20801 11.9999L3 10.5136V13.4853ZM18.791 11.9999L21 13.4853V10.5136L18.791 11.9999ZM3.7998 8.64151L7 10.7939L11 8.10343V3.86319L3.7998 8.64151ZM13 8.10343L17 10.7939L20.1992 8.64151L13 3.86319V8.10343ZM23 15.3632C23 15.6983 22.8319 16.0119 22.5527 16.1972L12.5527 22.8329C12.2177 23.0553 11.7823 23.0553 11.4473 22.8329L1.44727 16.1972C1.16806 16.0119 1 15.6983 1 15.3632V8.63663C1 8.30153 1.16806 7.98794 1.44727 7.80265L11.4473 1.1669L11.5771 1.09366C11.8896 0.947795 12.2596 0.972378 12.5527 1.1669L22.5527 7.80265C22.8319 7.98794 23 8.30153 23 8.63663V15.3632Z"
-                fill="#FF4848"></path>
-            </svg>
+            <Codepen width="20" height="20" />
           </a>
           <a
             href="https://bsky.app/profile/andystew.art"
             target="_blank"
             aria-label="Bluesky"
           >
-            <svg width="20" height="20" viewBox="0 0 32 32" fill="none">
-              <path
-                d="M8.06944 5.18271C11.2794 7.62685 14.7326 12.5819 16 15.241V22.2643C16 22.1148 15.9431 22.2837 15.8206 22.6477C15.1591 24.6182 12.5752 32.3088 6.66681 26.1607C3.55575 22.9236 4.996 19.6866 10.659 18.7093C7.41931 19.2682 3.77712 18.3444 2.77787 14.7227C2.49 13.6808 2 7.26335 2 6.3966C2 2.0549 5.75331 3.41959 8.06944 5.18271ZM23.9306 5.18271C20.7206 7.62685 17.2674 12.5819 16 15.241V22.2643C16 22.1148 16.0569 22.2837 16.1794 22.6477C16.8409 24.6182 19.4248 32.3088 25.3332 26.1607C28.4443 22.9236 27.004 19.6866 21.341 18.7093C24.5807 19.2682 28.2229 18.3444 29.2221 14.7227C29.51 13.6808 30 7.26335 30 6.3966C30 2.0549 26.2471 3.41959 23.9306 5.18271Z"
-                fill="#FF4848"></path>
-            </svg>
+            <Bluesky width="20" height="20" />
           </a>
           <a
             href="https://linkedin.com/in/andystewartdesign/"
             target="_blank"
             aria-label="LinkedIn"
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M12.6375 7.995V10.1163C13.0815 9.43942 13.6938 8.88956 14.4143 8.52055C15.1348 8.15154 15.9388 7.97604 16.7475 8.01125C21.0663 8.01125 22 10.7113 22 14.2238V21.375H18V15.035C18 13.5225 17.695 11.5775 15.34 11.5775C13.0562 11.5775 12.6662 13.2238 12.6662 14.9225V21.375H8.67875V7.995H12.6375ZM6 4.6325C5.99951 5.02875 5.88205 5.41604 5.66235 5.74582C5.44265 6.07559 5.13049 6.33316 4.765 6.48625C4.39966 6.6381 3.9974 6.67782 3.60942 6.60036C3.22143 6.5229 2.86527 6.33175 2.58625 6.05125C2.30671 5.77057 2.11639 5.41351 2.03924 5.02496C1.96209 4.63641 2.00154 4.23372 2.15264 3.86753C2.30374 3.50135 2.55973 3.18801 2.88843 2.96692C3.21714 2.74584 3.60387 2.62688 4 2.625C4.26323 2.62516 4.52384 2.67725 4.76691 2.77829C5.00997 2.87933 5.23072 3.02732 5.4165 3.2138C5.60229 3.40028 5.74945 3.62158 5.84958 3.86502C5.94971 4.10847 6.00082 4.36927 6 4.6325Z"
-                fill="#FF4848"></path>
-              <path d="M6 8.01125H2V21.375H6V8.01125Z" fill="#FF4848"></path>
-            </svg>
+            <Linkedin width="20" height="20" />
           </a>
         </div>
       </header>
-      <h1 class="headline">
-        Design<span
-          ><svg
-            width="0.575em"
-            height="0.575em"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+      <h1 class="headline" aria-label="Design and code">
+        <span aria-hidden="true">
+          Design<span class="no-wrap"
+            ><PlusExpressive width="0.575em" height="0.575em" />Code</span
           >
-            <ellipse
-              cx="12"
-              cy="22"
-              rx="2"
-              ry="2"
-              transform="rotate(-180 12 22)"
-              fill="oklch(0.7 0.24 25.4)"></ellipse>
-            <ellipse
-              cx="2"
-              cy="12"
-              rx="2"
-              ry="2"
-              transform="rotate(-90 2 12)"
-              fill="oklch(0.7 0.24 25.4)"></ellipse>
-            <ellipse
-              cx="12"
-              cy="7"
-              rx="2"
-              ry="2"
-              transform="rotate(-180 12 7)"
-              fill="oklch(0.7 0.24 25.4)"></ellipse>
-            <ellipse
-              cx="17"
-              cy="12"
-              rx="2"
-              ry="2"
-              transform="rotate(-90 17 12)"
-              fill="oklch(0.7 0.24 25.4)"></ellipse>
-            <ellipse
-              cx="12"
-              cy="2"
-              rx="2"
-              ry="2"
-              transform="rotate(-180 12 2)"
-              fill="oklch(0.7 0.24 25.4)"></ellipse>
-            <ellipse
-              cx="22"
-              cy="12"
-              rx="2"
-              ry="2"
-              transform="rotate(-90 22 12)"
-              fill="oklch(0.7 0.24 25.4)"></ellipse>
-            <ellipse
-              cx="12"
-              cy="17"
-              rx="2"
-              ry="2"
-              transform="rotate(-180 12 17)"
-              fill="oklch(0.7 0.24 25.4)"></ellipse>
-            <ellipse
-              cx="7"
-              cy="12"
-              rx="2"
-              ry="2"
-              transform="rotate(-90 7 12)"
-              fill="oklch(0.7 0.24 25.4)"></ellipse>
-            <ellipse
-              cx="12"
-              cy="12"
-              rx="2"
-              ry="2"
-              transform="rotate(-180 12 12)"
-              fill="oklch(0.7 0.24 25.4)"></ellipse>
-            <defs>
-              <clipPath id="clip0_42_222">
-                <rect width="24" height="24" fill="white"></rect>
-              </clipPath>
-            </defs>
-          </svg>
-        </span>Code
+        </span>
       </h1>
       <p>
         I use help bring clarity and life to digital experiences and interfaces.
-        I currently work as a Staff Design Technologist at ebay and live in
-        Brooklyn, NY.
+        I currently work as a <a
+          href="https://playbook.ebay.com/"
+          target="_blank">Staff Design Engineer at ebay</a
+        > and live in Brooklyn, NY.
       </p>
     </div>
   </section>
@@ -220,6 +92,67 @@ import Layout from "@/layouts/Layout.astro";
     touch-action: none;
   }
 
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem 0.75rem 1.25rem;
+    background: rgb(100 100 100 / 0.05);
+    border-radius: 0.5rem;
+    outline: 1px solid rgb(255 255 255 / 0.15);
+    backdrop-filter: blur(4px);
+    width: 100%;
+    max-width: 480px;
+
+    .logo {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+
+      .logomark {
+        color: oklch(0.7 0.24 25.4);
+      }
+
+      h2 {
+        line-height: 0.96;
+        margin: 0;
+        text-align: left;
+        font-size: 1rem;
+        font-weight: 600;
+        user-select: none;
+        width: 8ch;
+
+        @media (width > 420px) {
+          font-size: 1.125rem;
+          width: auto;
+        }
+      }
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.375rem;
+      height: 2.75rem;
+      text-decoration: none;
+      color: oklch(0.7 0.24 25.4);
+
+      &:visited {
+        color: oklch(0.7 0.24 25.4);
+      }
+    }
+
+    svg {
+      vertical-align: bottom;
+    }
+  }
+
   .content {
     padding: 2rem;
     display: flex;
@@ -228,63 +161,28 @@ import Layout from "@/layouts/Layout.astro";
     align-items: center;
     text-align: center;
     text-shadow: 0px 0px 40px rgb(0 0 0 / 1);
-    /* border: 8px solid #a51827; */
 
     h1 {
       margin: 0;
       max-width: 40ch;
       line-height: 1;
-      font-size: 6rem;
+      font-size: 5rem;
       font-weight: 900;
       margin: 0;
       margin-block-end: 0.5rem;
 
-      span {
-        display: inline-flex;
-        width: max-content;
-        height: max-content;
-        color: oklch(0.7 0.24 25.4);
-        margin-inline: 0.125em;
-      }
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0.75rem 1rem 0.75rem 1.25rem;
-      background: rgb(100 100 100 / 0.05);
-      border-radius: 0.5rem;
-      outline: 1px solid rgb(255 255 255 / 0.15);
-      backdrop-filter: blur(4px);
-      width: 100%;
-      max-width: 480px;
-
-      .links {
-        display: flex;
-        align-items: center;
+      @media (width > 560px) {
+        font-size: 6rem;
       }
 
-      a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 2.375rem;
-        height: 2.75rem;
-        text-decoration: none;
+      span.no-wrap {
+        white-space: nowrap;
       }
 
       svg {
-        vertical-align: bottom;
+        color: oklch(0.7 0.24 25.4);
+        margin-inline: 0.125em;
       }
-    }
-
-    h2 {
-      line-height: 0.96;
-      margin: 0;
-      text-align: left;
-      font-size: 1.125rem;
-      font-weight: 600;
     }
 
     p {
@@ -292,6 +190,16 @@ import Layout from "@/layouts/Layout.astro";
       text-wrap: balance;
       line-height: 1.5;
       font-weight: 500;
+
+      a {
+        color: inherit;
+        text-decoration-color: oklch(0.7 0.24 25.4);
+        text-underline-offset: 1.5px;
+
+        &:visited {
+          color: inherit;
+        }
+      }
     }
   }
 </style>
