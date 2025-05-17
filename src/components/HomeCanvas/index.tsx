@@ -1,6 +1,8 @@
 import { createSignal, onMount } from "solid-js";
 import GlslRenderer from "shdr";
 import frag from "@/assets/home-bg.frag?raw";
+import play from "@/assets/svg/play.svg?raw";
+import pause from "@/assets/svg/pause.svg?raw";
 import s from "./style.module.css";
 
 export default function HomeCanvas() {
@@ -28,9 +30,12 @@ export default function HomeCanvas() {
 
   return (
     <div ref={container} class={s.container}>
-      <button class={s.play} onclick={togglePlay}>
-        {paused() ? "Play" : "Pause"}
-      </button>
+      <button
+        class={s.play}
+        onclick={togglePlay}
+        aria-label={paused() ? "Play" : "Pause"}
+        innerHTML={paused() ? play : pause}
+      />
     </div>
   );
 }
