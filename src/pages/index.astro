@@ -51,19 +51,24 @@ import HomeCanvas from "@/components/HomeCanvas";
           </a>
         </div>
       </header>
-      <h1 class="headline" aria-label="Design and code">
-        <span aria-hidden="true">
-          Design<span class="no-wrap"
-            ><PlusExpressive width="0.575em" height="0.575em" />Code</span
-          >
-        </span>
-      </h1>
-      <p>
-        I help bring clarity and life to digital experiences and interfaces. I
-        currently work as a <a href="https://playbook.ebay.com/" target="_blank"
-          >Staff Design Engineer at ebay</a
-        > and live in Brooklyn, NY.
-      </p>
+      <div class="content-area content-area-headline">
+        <h1 class="headline" aria-label="Design and code">
+          <span aria-hidden="true">
+            Design<span class="no-wrap"
+              ><PlusExpressive width="0.575em" height="0.575em" />Code</span
+            >
+          </span>
+        </h1>
+      </div>
+      <div class="content-area content-area-body">
+        <p>
+          I help bring clarity and life to digital experiences and interfaces. I
+          currently work as a <a
+            href="https://playbook.ebay.com/"
+            target="_blank">Staff Design Engineer at ebay</a
+          > and live in Brooklyn, NY.
+        </p>
+      </div>
     </div>
   </section>
 </Layout>
@@ -143,7 +148,6 @@ import HomeCanvas from "@/components/HomeCanvas";
   .content {
     position: relative;
     padding: 2rem;
-    padding-bottom: 4.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -151,8 +155,25 @@ import HomeCanvas from "@/components/HomeCanvas";
     text-align: center;
     text-shadow: 0px 0px 40px rgb(0 0 0 / 1);
 
-    @media (width > 480px) {
-      padding-bottom: 2rem;
+    @media (width > 640px) {
+      padding-bottom: 3rem;
+    }
+
+    .content-area {
+      flex-grow: 1;
+      display: flex;
+
+      @media (width > 640px) {
+        flex-grow: 0;
+      }
+    }
+
+    .content-area-headline {
+      align-items: flex-end;
+    }
+
+    .content-area-body {
+      padding-block-start: 2rem;
     }
 
     h1 {
@@ -161,15 +182,15 @@ import HomeCanvas from "@/components/HomeCanvas";
       line-height: 1;
       font-size: 4.5rem;
       font-weight: 900;
-      margin-block: 1rem 0;
+      /* margin-block: 1rem 0; */
 
       @media (width > 480px) {
         font-size: 6rem;
       }
 
-      @media (width > 640px) {
+      /* @media (width > 640px) {
         margin-block: 0 0.5rem;
-      }
+      } */
 
       span.no-wrap {
         display: inline-flex;
@@ -188,6 +209,7 @@ import HomeCanvas from "@/components/HomeCanvas";
       text-wrap: balance;
       line-height: 1.5;
       font-weight: 500;
+      margin: 0;
 
       a {
         color: inherit;
