@@ -147,13 +147,17 @@ import HomeCanvas from "@/components/HomeCanvas";
 
   .content {
     position: relative;
-    padding: 2rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     text-shadow: 0px 0px 40px rgb(0 0 0 / 1);
+
+    @media (width > 560px) {
+      padding: 2rem;
+    }
 
     @media (width > 640px) {
       padding-bottom: 3rem;
@@ -184,7 +188,7 @@ import HomeCanvas from "@/components/HomeCanvas";
       font-weight: 900;
       /* margin-block: 1rem 0; */
 
-      @media (width > 480px) {
+      @media (width > 560px) {
         font-size: 6rem;
       }
 
@@ -207,9 +211,14 @@ import HomeCanvas from "@/components/HomeCanvas";
     p {
       max-width: 40ch;
       text-wrap: balance;
-      line-height: 1.5;
+      line-height: 1.6;
       font-weight: 500;
+      font-size: 0.9375rem;
       margin: 0;
+
+      @media (width > 560px) {
+        font-size: 1rem;
+      }
 
       a {
         color: inherit;
